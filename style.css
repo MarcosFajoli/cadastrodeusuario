@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #ebebeb;
+  color: #bbb;
+}
+
+.logo {
+  margin: 20px 0 0 10%;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.sidemenu {
+  display: flex;
+  flex-flow: column wrap;
+  padding-right: 30px;
+}
+
+.sidemenu > button {
+  border: 0;
+  padding: 15px 25px;
+  padding-right: 35px;
+  font-size: 14pt;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  text-align: start;
+  background-color: #56ccf2;
+  color: azure;
+  border-radius: 5px;
+}
+
+.sidemenu > button:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.button {
+  display: flex;
+  margin: 20px 15px 20px 0;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.button > button {
+  border: 0;
+  padding: 15px 25px;
+  font-size: 14pt;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
+  background-color: #27ae60;
+  color: azure;
+  border-radius: 5px;
+}
+
+.button > button:hover {
+  transition: 0.3s;
+  background-color: #178a47;
+}
+
+.sidemenu > button:hover {
+  transition: 0.3s;
+  background-color: #2ba8d1;
+}
+
+.page1 {
+  background-color: #fafafa;
+  border-radius: 7px;
+  border: 2px solid #bbb
+}
+
+.page1 > h1 {
+  font-size: 22pt;
+  font-weight: 600;
+  letter-spacing: -1px;
+  padding: 30px 10px 20px 10px;
+  color: #3bb8e2;
+  text-align: center;
+}
+
+.form {
+  max-width: 900px;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px 40px;
+}
+
+.inputs {
+  margin: 0 12px 15px 12px;
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 24px);
+}
+
+label {
+  font-size: 12pt;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.inputs > input, .inputs > .two-inputs > input {
+  height: 30px;
+  width: 100%;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+}
+
+.inputs:nth-child(10) {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.two-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.two-inputs:nth-child(1) {
+  width: 70%;
+  margin-right: 20px;
+}
+
+.two-inputs:nth-child(2) {
+  width: 30%;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .form {
+    padding: 10px 10px;
+  }
+
+  .inputs {
+    margin: 0 6px 15px 6px;
+    width: calc(100% - 12px);
+  }
+
+  .button {
+    justify-content: center;
+  }
+}
+
+
+
