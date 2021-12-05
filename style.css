@@ -76,7 +76,17 @@ body {
 .page1 {
   background-color: #fafafa;
   border-radius: 7px;
-  border: 2px solid #bbb
+  border: 2px solid #bbb;
+  
+}
+
+.page1, .page2{
+  visibility: hidden;
+}
+
+.animation {
+  animation-name: slide;
+  animation-duration: 0.5s;
 }
 
 .page1 > h1 {
@@ -132,6 +142,15 @@ label {
 
 .two-inputs:nth-child(2) {
   width: 30%;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 900px) {

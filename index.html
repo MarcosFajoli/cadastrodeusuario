@@ -13,10 +13,10 @@
   </nav>
   <div class="container">
     <div class="sidemenu">
-      <button>Cadastro</button>
-      <button>Lista de cadastrados</button>
+      <button class="transform" id="registerBtn" onclick="setPage1VisibleOrInvisible('visible')">Cadastro</button>
+      <button class="transform" id="listBtn" onclick="setPage2VisibleOrInvisible('visible')">Lista de cadastrados</button>
     </div>
-    <div class="page1">
+    <div class="page1" id="page1"> 
       <h1>CADASTRO</h1>
       <form class="form">
         <div class="inputs">
@@ -70,6 +70,8 @@
         </div>
       </form>
     </div>
+    <div class="page2" id="page2"></div>
   </div>
+  <script src="main.js"></script>
 </body>
 </html>
