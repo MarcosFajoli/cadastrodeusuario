@@ -19,15 +19,19 @@ const listBtn = document.getElementById('listBtn')
 const page1 = document.getElementById('page1')
 const page2 = document.getElementById('page2')
 registerBtn.addEventListener('click', () => {
+  page1.style.display = 'block'
   page1.classList.toggle('animation')
   if (page2.classList.contains('animation'))
     page2.classList.toggle('animation')
+  page2.style.display = 'none'
 })
 
 listBtn.addEventListener('click', () => {
+  page2.style.display = 'block'
   page2.classList.toggle('animation')
   if (page1.classList.contains('animation')) 
     page1.classList.toggle('animation')
+  page1.style.display = 'none'
 })
 
 function setPage1VisibleOrInvisible(state, setter = true) {

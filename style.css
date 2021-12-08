@@ -77,7 +77,6 @@ body {
   background-color: #fafafa;
   border-radius: 7px;
   border: 2px solid #bbb;
-  
 }
 
 .page1, .page2{
@@ -143,6 +142,53 @@ label {
 .two-inputs:nth-child(2) {
   width: 30%;
 }
+
+.page2 {
+  background-color: #fafafa;
+  border-radius: 7px;
+  border: 2px solid #bbb;
+  width: 900px;
+}
+
+.page2 > h1 {
+  color: #808080;
+  font-size: 12pt;
+  padding: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #bbb;
+}
+
+.page2 > p {
+  color: black;
+  font-size: 14pt;
+  font-weight: 600;
+  padding: 20px;
+  padding-right: 0;
+  border-bottom: 2px solid #bbb;;
+  background-color: #cecece;
+}
+
+.user-table {
+  width: 100%;
+}
+
+.user-table > thead {
+  background-color: #cecece;
+}
+
+.user-table > thead > tr > th {
+  color: black;
+  text-align: start;
+  padding: 10px 20px;
+}
+
+.user-table > tbody > tr > th {
+  color: #5a5a5a;
+  text-align: start;
+  padding: 15px;
+  border-bottom: 2px solid #bbb;
+}
+
 
 @keyframes slide {
   from {
